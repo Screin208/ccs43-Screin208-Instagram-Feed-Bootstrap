@@ -1,193 +1,146 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-  <div class="row mt-3 mx-1">
-    <div class="col-lg-4 col-md-5 col-sm-2 d-flex">
-      <i class="fa-brands fa-instagram fa-2xl mt-3 pe-1"></i>
-      <h4>Instagram</h4>
-    </div>
-
-    <div class="col-lg-4 col-md-2 col-sm-8">
-
-    </div>
-
-    <div class="col-lg-4 col-md-5 col-sm-2 d-flex justify-content-end">
-      <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Create a new post
-      </button>
-
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle ms-2" type="button" data-bs-toggle="dropdown"
-          aria-expanded="false">
-          <i class="fa-solid fa-gear"></i>
-        </button>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Profile</a></li>
-          <li><a class="dropdown-item" href="#">Accesibility</a></li>
-          <li><a class="dropdown-item" href="#">Privacy and data</a></li>
-          <hr>
-          <li><a class="dropdown-item text-danger" href="#"> Log Out</a></li>
-        </ul>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="container">
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12 text-center mt-5">
-          <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
-            <a href="index2.html" class="btn btn-outline-primary" for="btnradio1"><i class="fa fa-bars"></i></a>
-
-            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-            <a href="index.html" class="btn btn-outline-primary" for="btnradio2"><i class=" fa fa-th-large"></i></a>
-          </div>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Estilos -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <title>Index 2</title>
+    </head>
+    <body>
+        <!-- Barra de navegación -->
+        <nav class="navbar fixed-top navbar-light bg-light">
+            <span class="navbar-brand mb-0 ml-5 h1"><i class="fab fa-instagram"></i> Instagram</span>
+            <form class="form-inline">
+                <button data-toggle="modal" data-target="#exampleModal" class="btn btn-success" 
+                type="button">Crear un nuevo post</button>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" 
+                    aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-cog"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#">Accion</a>
+                        <a class="dropdown-item" href="#">Otra accion</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Cerrar sesión</a>
+                    </div>
+                </div>
+            </form>
+        </nav>
+        <!-- Botones cambio de página -->
+        <nav aria-label="Page navigation example" class="margen">
+            <ul class="pagination justify-content-center">
+                <li class="page-item"><a class="page-link text-secondary" href="index.html">
+                    <i class="fas fa-th"></i></a>
+                </li>
+                <li class="page-item"><a class="page-link text-secondary" href="index2.html">■</a></li>
+            </ul>
+        </nav>
+        <!--Indes 2-->
+        <div class="card">
+            <div class="card-header">
+                <h4 class="titulo">Juntos</h4>
+                <button type="button" class="btn btn-link">12/14</button>
+            </div>
+            <img src="https://picsum.photos/id/678/550/400" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">23 Likes</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non elit ornare, interdum libero id, ultrices sem. Duis molestie elementum ipsum et eleifend. Nunc porta.</p>
+                <button type="button" class="btn btn-light btn-sm">
+                    <i class="far fa-heart"></i>
+                </button>
+                <input type="text" class="form-control comentario" id="recipient-name" value="Escriba un comentario...">
+                <button type="button" class="btn btn-light btn-sm">
+                    <i class="fas fa-ellipsis-v"></i>
+                </button>
+            </div>
         </div>
-      </div>
-
-      <div class="row my-4">
-        <div class="col-lg-6 col-md-8 col-sm-12 mx-auto shadow">
-          <div class="d-flex justify-content-between">
-            <h3>Mi paisaje Favorito</h3>
-            <h4 class="justify-content-end"> 28/02</h4>
-          </div>
-          <div>
-            <img class="img-fluid" src="https://picsum.photos/id/123/620/500" alt="">
-          </div>
-          <div class="p-2">
-            <p><b>208 likes</b></p>
-            <p>Ut mattis commodo tellus ac elementum. Nam suscipit leo ut quam vehicula, vulputate dapibus
-              ante
-              egestas.</p>
-          </div>
+        <div class="card">
+            <div class="card-header">
+                <h4 class="titulo">Cocinando</h4>
+                <button type="button" class="btn btn-link">03/15</button>
+            </div>
+            <img src="https://picsum.photos/id/292/550/400" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">20 Likes</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non elit ornare, interdum libero id, ultrices sem. Duis molestie elementum ipsum et eleifend. Nunc porta.</p>
+                <button type="button" class="btn btn-light btn-sm">
+                    <i class="far fa-heart"></i>
+                </button>
+                <input type="text" class="form-control comentario" id="recipient-name" value="Escriba un comentario...">
+                <button type="button" class="btn btn-light btn-sm">
+                    <i class="fas fa-ellipsis-v"></i>
+                </button>
+            </div>
         </div>
-      </div>
-      <div class="row my-4">
-        <div class="col-lg-6 col-md-8 col-sm-12 mx-auto shadow">
-          <div class="d-flex justify-content-between">
-            <h3>Mi paisaje Favorito</h3>
-            <h4 class="justify-content-end"> 28/02</h4>
-          </div>
-          <div>
-
-          </div>
-          <div>
-            <img class="img-fluid" src="https://picsum.photos/id/124/620/500" alt="">
-          </div>
-          <div class="p-2">
-            <p><b>208 likes</b></p>
-            <p>Ut mattis commodo tellus ac elementum. Nam suscipit leo ut quam vehicula, vulputate dapibus
-              ante
-              egestas.</p>
-          </div>
+        <div class="card">
+                <div class="card-header">
+                    <h4 class="titulo">Un sueño</h4>
+                    <button type="button" class="btn btn-link">05/15</button>
+                </div>
+                <img src="https://picsum.photos/id/724/550/400" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">115 Likes</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non elit ornare, interdum libero id, ultrices sem. Duis molestie elementum ipsum et eleifend. Nunc porta.</p>
+                    <button type="button" class="btn btn-light btn-sm">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <input type="text" class="form-control comentario" id="recipient-name" value="Escriba un comentario...">
+                    <button type="button" class="btn btn-light btn-sm">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="titulo">Muchos mundos, muchas historias</h4>
+                    <button type="button" class="btn btn-link">12/15</button>
+                </div>
+                <img src="https://picsum.photos/id/444/550/400" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">30 Likes</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non elit ornare, interdum libero id, ultrices sem. Duis molestie elementum ipsum et eleifend. Nunc porta.</p>
+                    <button type="button" class="btn btn-light btn-sm">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <input type="text" class="form-control comentario" id="recipient-name" value="Escriba un comentario...">
+                    <button type="button" class="btn btn-light btn-sm">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                </div>
+            </div>
+        <!--Modal-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-light btn-sm">
+                            <i class="fas fa-camera"></i>
+                        </button>
+                        <button type="button" class="btn btn-light btn-sm">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </button>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-success">Publicar</button>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="row my-4">
-        <div class="col-lg-6 col-md-8 col-sm-12 mx-auto shadow">
-          <div class="d-flex justify-content-between">
-            <h3>Mi paisaje Favorito</h3>
-            <h4 class="justify-content-end"> 28/02</h4>
-          </div>
-          <div>
-
-          </div>
-          <div>
-            <img class="img-fluid" src="https://picsum.photos/id/125/620/500" alt="">
-          </div>
-          <div class="p-2">
-            <p><b>208 likes</b></p>
-            <p>Ut mattis commodo tellus ac elementum. Nam suscipit leo ut quam vehicula, vulputate dapibus
-              ante
-              egestas.</p>
-          </div>
-        </div>
-      </div>
-      <div class="row my-4">
-        <div class="col-lg-6 col-md-8 col-sm-12 mx-auto shadow">
-          <div class="d-flex justify-content-between">
-            <h3>Mi paisaje Favorito</h3>
-            <h4 class="justify-content-end"> 28/02</h4>
-          </div>
-          <div>
-
-          </div>
-          <div>
-            <img class="img-fluid" src="https://picsum.photos/id/126/620/500" alt="">
-          </div>
-          <div class="p-2">
-            <p><b>208 likes</b></p>
-            <p>Ut mattis commodo tellus ac elementum. Nam suscipit leo ut quam vehicula, vulputate dapibus
-              ante
-              egestas.</p>
-          </div>
-        </div>
-      </div>
-      <div class="row my-4">
-        <div class="col-lg-6 col-md-8 col-sm-12 mx-auto shadow">
-          <div class="d-flex justify-content-between">
-            <h3>Mi paisaje Favorito</h3>
-            <h4 class="justify-content-end"> 28/02</h4>
-          </div>
-          <div>
-
-          </div>
-          <div>
-            <img class="img-fluid" src="https://picsum.photos/id/127/620/500" alt="">
-          </div>
-          <div class="p-2">
-            <p><b>208 likes</b></p>
-            <p>Ut mattis commodo tellus ac elementum. Nam suscipit leo ut quam vehicula, vulputate dapibus
-              ante
-              egestas.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <h2>Caption: </h2>
-            <textarea name="" id="" cols="60" rows="2"></textarea>
-            <i class="fa-solid fa-camera me-4"></i>
-            <i class="fa-solid fa-location-dot me-4"></i>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-success">Publish</button>
-          </div>
-        </div>
-      </div>
-
-
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
-    </div>
-
-</body>
-
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>
